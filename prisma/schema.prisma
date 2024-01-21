@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int      @id @default(autoincrement())
+  name     String   @db.VarChar(255)
+  email    String   @unique @db.VarChar(255)
+  churchId Int
+  Church   Churches @relation(fields: [churchId], references: [id])
+}
+
+model Members {
+  id         Int       @id @default(autoincrement())
+  firstName  String    @db.VarChar(255)
+  lastName   String    @db.VarChar(255)
+  memberCode String    @unique @db.VarChar(255)
+  churchId   Int
+  Church     Churches  @relation(fields: [churchId], references: [id])
+  entries    Entries[]
+}
+
+model Churches {
+  id         Int       @id @default(autoincrement())
+  churchName String    @db.VarChar(255)
+  churchCode String    @unique @db.VarChar(255)
+  admin      User[]
+  members    Members[]
+  entries    Entries[]
+}
+
+model Entries {
+  id        Int      @id @default(autoincrement())
+  memberId  Int      @unique
+  Member    Members  @relation(fields: [memberId], references: [id])
+  churchId  Int
+  Church    Churches @relation(fields: [churchId], references: [id])
+  category  String   @db.VarChar(255)
+  payment   String   @db.VarChar(255)
+  cash      Json?
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+}
