@@ -7,7 +7,7 @@ import PricingSection from "./sections/pricing";
 
 export default function Home() {
   return (
-    <main className='flex flex-col gap-40 max-w-screen-xl w-full h-full text-sm mx-auto'>
+    <main className='flex flex-col gap-40 max-w-screen-xl w-full h-full text-sm mx-auto px-6'>
       <HeroSection /> 
       <FeaturesSection />
       <PricingSection />

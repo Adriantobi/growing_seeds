@@ -6,7 +6,7 @@ export default function FeaturesSection() {
     <div className='relative flex flex-col w-full gap-12 justify-center items-center'>
       <div className='flex flex-col gap-6 items-center justify-center'>
         <div className='relative'> 
-          <span className='text-4xl font-medium'>Don&apos;t hesitate. Let&apos;s Try</span>
+          <span className='text-3xl sm:text-4xl font-medium'>Don&apos;t hesitate. Let&apos;s Try</span>
           <span className='absolute w-[35%] h-full bg-gradient-to-r from-transparent to-background to-100% opacity-75 top-0 right-0 scale-150'/>
         </div>
         <span className='max-w-[34em] flex text-center opacity-75'>Growing Seeds provides various features that can make it easier for churches to manage their finances.</span>
