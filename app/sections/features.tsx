@@ -11,7 +11,7 @@ export default function FeaturesSection() {
         </div>
         <span className='max-w-[34em] flex text-center opacity-75'>Growing Seeds provides various features that can make it easier for churches to manage their finances.</span>
       </div>
-      <div className='flex gap-6 justify-center items-center flex-wrap'>
+      <div className='flex gap-6 justify-center items-center w-full flex-wrap'>
         <FeatureCard title='Financial Planning Analysis' content='Make informed decisions about your church&apos;s financial future with powerful forecasting and scenario analysis tools.'/>
         <FeatureCard title='Cash Flow' content='Optimize your cash flow and manage your working capital with ease using the cash management features.'/>
         <FeatureCard title='Church Intelligence' content='Access real-time data and insights to make informed decisions about your churches&apos;s financial performance.'/>

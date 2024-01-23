@@ -8,8 +8,8 @@ interface FeatureCardProps {
 
 export default function FeatureCard({title, content, children}: FeatureCardProps) {
   return (
-    <div className='relative'>
-      <div className='rounded-2xl rounded-b-none border-b-0 border-[1.5px] dark:border-nav border-gray-400 p-8 relative min-w-72 w-full sm:w-96 min-h-[21.5rem] overflow-hidden'>
+    <div className='relative w-full sm:w-auto'>
+      <div className='rounded-2xl rounded-b-none border-b-0 border-[1.5px] dark:border-nav border-gray-400 p-8 relative min-w-64 w-full sm:w-96 min-h-[21.5rem] overflow-hidden'>
         <div className='w-full h-52 rounded-xl dark:bg-nav bg-gray-500 opacity-25 border border-gray-500 flex justify-center items-center relative'>
           <span className='w-20 h-1 rounded-full bg-gray-200 absolute left-0 right-0 mx-auto top-3' />
           {children}

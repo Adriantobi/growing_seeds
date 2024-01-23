@@ -12,8 +12,8 @@ export default function PricingSection() {
       </div>
 
       <div className='flex items-center justify-center gap-6 lg:gap-0 flex-wrap w-full lg:w-auto lg:flex-nowrap'>
-        <div className='relative'>
-          <div className='flex flex-col gap-5 z-10 rounded-b-none border-b-0 rounded-2xl border-[1.5px] lg:border-r-0 lg:rounded-r-none dark:border-nav border-gray-400 p-6 min-w-72 md:w-96 min-h-[21.5rem]'>
+        <div className='relative sm:w-auto w-full'>
+          <div className='flex flex-col gap-5 z-10 rounded-b-none border-b-0 rounded-2xl border-[1.5px] lg:border-r-0 lg:rounded-r-none dark:border-nav border-gray-400 p-6 min-w-64 md:w-96 min-h-[21.5rem]'>
             <div className='flex flex-col gap-6'>
               <span className='font-medium text-base z-10'>Free Access</span>
               <span className='flex z-10 items-center gap-2'>
@@ -27,8 +27,8 @@ export default function PricingSection() {
           <span className='bg-gradient-to-b from-transparent to-background w-full h-full absolute bottom-0 left-0' />
         </div>
 
-        <div className='relative'>
-          <div className='flex flex-col gap-4 z-10 rounded-b-none border-b-0 rounded-2xl border-[1.5px] dark:border-accent2 border-opacity-45 border-gray-400 p-6 pt-9 min-w-72 w-full md:w-96 min-h-[23rem]'>
+        <div className='relative sm:w-auto w-full'>
+          <div className='flex flex-col gap-4 z-10 rounded-b-none border-b-0 rounded-2xl border-[1.5px] dark:border-accent2 border-opacity-45 border-gray-400 p-6 pt-9 min-w-64 w-full md:w-96 min-h-[23rem]'>
             <div className='flex flex-col gap-6'>
               <span className='font-medium text-base z-10'>Pro Access</span>
               <span className='flex z-10 items-center gap-2'>

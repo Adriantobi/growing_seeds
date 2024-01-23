@@ -9,7 +9,7 @@ export default function NavBar() {
   const {status} = useSession()
 
   return (
-    <div className='py-4 px-4 flex items-center justify-between sticky top-0 right-0 left-0 mx-auto z-50 backdrop-blur-lg text-sm max-w-screen-xl justify-self-center  self-center'>
+    <div className='py-2 sm:py-4 px-4 flex items-center justify-between sticky top-0 right-0 left-0 mx-auto z-50 backdrop-blur-lg text-sm max-w-screen-xl justify-self-center  self-center'>
       <Link href={'/'}>
         <div className='flex gap-2 font-semibold text-lg items-center cursor-pointer justify-self-start'>
           <span className='w-8 h-8 bg-white rounded-xl rotate-45 flex justify-center items-center'>
