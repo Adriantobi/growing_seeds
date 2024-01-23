@@ -11,7 +11,7 @@ export default function PricingSection() {
         <span className='max-w-[34em] flex opacity-75'>Focus on ministry, not spreadsheets. Streamline your financial operations with pricing plans tailored to your church.</span>
       </div>
 
-      <div className='flex items-center flex-wrap lg:flex-nowrap'>
+      <div className='flex items-center justify-center gap-6 lg:gap-0 flex-wrap w-full lg:w-auto lg:flex-nowrap'>
         <div className='relative'>
           <div className='flex flex-col gap-5 z-10 rounded-b-none border-b-0 rounded-2xl border-[1.5px] lg:border-r-0 lg:rounded-r-none dark:border-nav border-gray-400 p-6 min-w-72 md:w-96 min-h-[21.5rem]'>
             <div className='flex flex-col gap-6'>
