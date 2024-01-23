@@ -6,7 +6,7 @@ import PricingSection from "./sections/pricing";
 
 export default function Home() {
   return (
-    <main className='flex flex-col gap-40 max-w-screen-xl w-full h-full text-sm mx-auto lg:px-6 px-5'>
+    <main className='flex flex-col gap-40 max-w-screen-xl w-full h-full text-sm mx-auto lg:px-6 px-5 overflow-hidden'>
       <HeroSection /> 
       <FeaturesSection />
       <PricingSection />

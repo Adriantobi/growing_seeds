@@ -20,9 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <NextAuthProvider>
-        <body className={inter.className}>
+        <body className={`${inter.className} overflow-x-hidden`}>
           <NavBar />
           {children}
+          <CallToActionSection />
         </body>
       </NextAuthProvider>
     </html>
